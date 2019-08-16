@@ -14,4 +14,8 @@ Ingredient.create!(name: "lemon")
 Ingredient.create!(name: "ice")
 Ingredient.create!(name: "mint leaves")
 
+Cocktail.create!(name: "lemon")
+Cocktail.create!(name: "ice")
+Cocktail.create!(name: "mint leaves")
+
 puts "Ingredients added."
