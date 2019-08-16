@@ -14,8 +14,8 @@ Ingredient.create!(name: "lemon")
 Ingredient.create!(name: "ice")
 Ingredient.create!(name: "mint leaves")
 
-Cocktail.create!(name: "lemon")
-Cocktail.create!(name: "ice")
-Cocktail.create!(name: "mint leaves")
+Cocktail.create!(name: "Wodka Orange")
+Cocktail.create!(name: "Mojito")
+Cocktail.create!(name: "Moscow Mule")
 
 puts "Ingredients added."

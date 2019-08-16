@@ -1,1 +1,13 @@
-show.html.erb
+<h1>	<%= @cocktail.name %> </h1>
+
+<% @cocktail.doses.each do |dose| %>
+	<h3>	<%= dose.description %> </h3>
+	<h3>	<%= dose.ingredient.name %> </h3>
+	<%= link_to "delete", dose_path(dose), :method => :delete %>
+<% end %>
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.submit "add a description", class: "btn btn-primary" %>
+<% end %>
