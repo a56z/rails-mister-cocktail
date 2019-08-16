@@ -1,1 +1,9 @@
-index.html.erb
+<h1>All our cocktails</h1>
+
+<%= link_to "Add a cocktail", new_cocktail_path  %>
+
+<% @cocktails.each do |cocktail| %>
+	<h2> <%= link_to cocktail.name, cocktail_path(cocktail) %> </h2>
+	<p> <%= cocktail.id %></p>
+	<%= link_to "Remove cocktail", cocktail_path(cocktail), method: :delete %>
+<% end %>
