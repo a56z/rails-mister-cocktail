@@ -5,4 +5,14 @@
 <% @cocktails.each do |cocktail| %>
 	<h2> <%= link_to cocktail.name, cocktail_path(cocktail) %> </h2>
 	<%= link_to "Remove cocktail", cocktail_path(cocktail), method: :delete %>
+	<%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
+	<div class="card">
+	  <div class="card-category">Popular</div>
+	  <div class="card-description">
+	  </div>
+	  <a class="card-link" href="#" ></a>
+	</div>
 <% end %>
+
+
+

@@ -11,3 +11,6 @@
   <%= f.association :ingredient %>
   <%= f.submit "add a description", class: "btn btn-primary" %>
 <% end %>
+
+
+<%= cl_image_url @cocktail.photo, height: 300, width: 400, crop: :fill %>
